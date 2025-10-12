@@ -416,6 +416,5 @@ fetch('https://api.codestrail.com/project/{projectId}/{resourceName}/{id}', {
 ---
 
 ## 🧾 License
-This API Database service is open for testing and educational use.  
-Developed by [CodesTrail APIs](https://api.codestrail.com/).  
+Developed by [APILinc](https://api.codestrail.com/).  
 All rights reserved © 2025.
