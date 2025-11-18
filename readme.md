@@ -1,15 +1,15 @@
 **Create Project Using this URL**
 ```
-https://api.codestrail.com/
+https://apilinc.codestrail.com/
 ```
 # 🧩 API Data Endpoint Documentation
 
 **Base URL:**  
 ```
-https://api.codestrail.com/project/{projectId}
+https://apilinc.codestrail.com/project/{projectId}
 ```
 
-This endpoint allows you to manage your project’s API data — including creating, reading, updating, and deleting records.
+This endpoint allows you to manage your project’s API data - including creating, reading, updating, and deleting records.
 
 ---
 
@@ -75,7 +75,7 @@ GET /{resourceName}
 
 **JavaScript Example:**
 ```js
-fetch('https://api.codestrail.com/project/{projectId}/{resourceName}', {
+fetch('https://apilinc.codestrail.com/project/{projectId}/{resourceName}', {
   method: 'GET',
   headers: { "x-api-key": 'YOUR_API_KEY' }
 })
@@ -110,7 +110,7 @@ GET /{resourceName}/{id}
 
 **Example:**
 ```js
-fetch('https://api.codestrail.com/project/{projectId}/{resourceName}/{id}', {
+fetch('https://apilinc.codestrail.com/project/{projectId}/{resourceName}/{id}', {
   method: 'GET',
   headers: { "x-api-key": 'YOUR_API_KEY' }
 })
@@ -171,7 +171,7 @@ GET /users/search?age=gte:18&status=in:active,pending&name=contains:john
 
 **Example:**
 ```js
-fetch('https://api.codestrail.com/project/{projectId}/{resourceName}/search?status=Pending&orderby=id desc&limit=5&page=1', {
+fetch('https://apilinc.codestrail.com/project/{projectId}/{resourceName}/search?status=Pending&orderby=id desc&limit=5&page=1', {
   method: 'GET',
   headers: { "x-api-key": 'YOUR_API_KEY' }
 })
@@ -214,7 +214,7 @@ POST /{resourceName}
 
 **JS Example:**
 ```js
-fetch('https://api.codestrail.com/project/{projectId}/{resourceName}', {
+fetch('https://apilinc.codestrail.com/project/{projectId}/{resourceName}', {
   method: 'POST',
   headers: { 'x-api-key': 'YOUR_API_KEY', 'Content-Type': 'application/json' },
   body: JSON.stringify({
@@ -261,7 +261,7 @@ POST /{resourceName}/{id}/uploadfile
 const formData = new FormData();
 formData.append('file', document.querySelector('#fileInput').files[0]);
 
-fetch('https://api.codestrail.com/project/{projectId}/{resourceName}/{id}/uploadfile', {
+fetch('https://apilinc.codestrail.com/project/{projectId}/{resourceName}/{id}/uploadfile', {
   method: 'POST',
   headers: { 'x-api-key': 'YOUR_API_KEY' },
   body: formData
@@ -306,7 +306,7 @@ PUT /{resourceName}/{id}
 
 **JS Example:**
 ```js
-fetch('https://api.codestrail.com/project/{projectId}/{resourceName}/{id}', {
+fetch('https://apilinc.codestrail.com/project/{projectId}/{resourceName}/{id}', {
   method: 'PUT',
   headers: { 'x-api-key': 'YOUR_API_KEY', 'Content-Type': 'application/json' },
   body: JSON.stringify({
@@ -353,7 +353,7 @@ PATCH /{resourceName}/{id}
 
 **JS Example:**
 ```js
-fetch('https://api.codestrail.com/project/{projectId}/{resourceName}/{id}', {
+fetch('https://apilinc.codestrail.com/project/{projectId}/{resourceName}/{id}', {
   method: 'PATCH',
   headers: { 'x-api-key': 'YOUR_API_KEY', 'Content-Type': 'application/json' },
   body: JSON.stringify({
@@ -382,7 +382,7 @@ DELETE /{resourceName}/{id}
 ```
 **Response:**
 ```js
-fetch('https://api.codestrail.com/project/{projectId}/{resourceName}/{id}', {
+fetch('https://apilinc.codestrail.com/project/{projectId}/{resourceName}/{id}', {
   method: 'DELETE',
   headers: { "x-api-key": 'YOUR_API_KEY' }
 })
@@ -395,13 +395,13 @@ fetch('https://api.codestrail.com/project/{projectId}/{resourceName}/{id}', {
 
 | Code | Meaning |
 |------|----------|
-| **200** | OK — Successful request |
-| **201** | Created — New record created |
-| **400** | Bad Request — Invalid data |
-| **401** | Unauthorized — Invalid or missing API key |
-| **404** | Not Found — Record not found |
-| **409** | Conflict — Duplicate resource |
-| **500** | Server Error — Something went wrong |
+| **200** | OK - Successful request |
+| **201** | Created - New record created |
+| **400** | Bad Request - Invalid data |
+| **401** | Unauthorized - Invalid or missing API key |
+| **404** | Not Found - Record not found |
+| **409** | Conflict - Duplicate resource |
+| **500** | Server Error - Something went wrong |
 
 ---
 
@@ -416,5 +416,5 @@ fetch('https://api.codestrail.com/project/{projectId}/{resourceName}/{id}', {
 ---
 
 ## 🧾 License
-Developed by [APILinc](https://api.codestrail.com/).  
+Developed by [APILinc](https://apilinc.codestrail.com/).  
 All rights reserved © 2025.
